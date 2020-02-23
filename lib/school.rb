@@ -18,10 +18,12 @@ class School
   def grade(grade)
     @roster[grade]
   end
-  def sort()
-    @roster.each do |grade|
-      grade.sort!
+  def sort
+    new_hash
+    @roster.each do |grade, student|
+      new_hash[grade] = student.sort
     end
+    new_hash
   end
 end
     
