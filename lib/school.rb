@@ -23,6 +23,7 @@ class School
       grade.sort!
     end
   end
+end
     
     
     
